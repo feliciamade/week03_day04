@@ -1,0 +1,67 @@
+* {
+    font-family: "Kumbh Sans", serif;
+    font-weight: 400;
+    text-transform: lowercase;
+}
+
+
+
+#header {
+    display: flex;
+    justify-content: center;
+}
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#mainDisplay{
+
+    margin-top: 1%;
+}
+
+#mainDisplay img {
+    width: 50vh;
+    border-radius: 20px;
+
+}
+
+
+#thumbnailsContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    /* margin-top: 5%; */
+}
+.thumbnail {
+    
+    position: relative; /* Set position context for absolute positioning of the button */
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+.thumbnail img {
+    margin: 0;
+    width: 10vh;
+    object-fit: cover; /* This will make sure to cover the area without stretching the image */
+    border-radius: 10px;
+    
+}
+.thumbnail button {
+    position: absolute; /* Position the button over the image */
+    bottom:0px;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the button */
+   
+}
+
+button{
+    border:none;
+    background-color: black;
+    padding:2px 8px;
+    color:white;
+    border-radius: 10px;
+    font-size: 10px;
+}
