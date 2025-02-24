@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div id='header'>
+        <h1>Aspen's Adventure Gallery</h1>
+    </div>
+    <div id='content'>
+        <div id="mainDisplay">
+            <img id="mainDisplayImage" src="assets/placeholder.png"/>
+        </div>
+        <h3>Select an image to view</h3>
+        <div id='thumbnailsContainer'>
+            <div class='thumbnail'>
+                <img src="assets/Aspen1.jpg" class="thumbnailImage">
+                <button
+                    onclick='
+                    //*** YOUR JAVASCRIPT CODE HERE ***
+
+
+                    '>View</button>
+            </div>
+            <div class='thumbnail'>
+                <img src="assets/Aspen2.jpg" class="thumbnailImage">
+                <button
+                    onclick='
+                    //*** YOUR JAVASCRIPT CODE HERE ***
+
+
+                    '>View</button>
+            </div>
+            <div class='thumbnail'>
+                <img src="assets/Aspen3.jpg" class="thumbnailImage">
+                <button
+                    onclick='
+                    //*** YOUR JAVASCRIPT CODE HERE ***
+
+
+                    '>View</button>
+            </div>
+            <div class='thumbnail'>
+                <img src="assets/Aspen4.jpg" class="thumbnailImage">
+                <button
+                    onclick='
+                    //*** YOUR JAVASCRIPT CODE HERE ***
+
+
+                    '>View</button>
+            </div>
+            <div class='thumbnail'>
+                <img src="assets/Aspen5.jpg" class="thumbnailImage">
+                <button
+                    onclick='
+                    //*** YOUR JAVASCRIPT CODE HERE ***
+
+
+                    '>View</button>
+            </div>
+            <div class='thumbnail'>
+                <img src="assets/Aspen6.jpg" class="thumbnailImage">
+                <button
+                    onclick='
+                    //*** YOUR JAVASCRIPT CODE HERE ***
+
+
+                    '>View</button>
+            </div>
+            <div class='thumbnail'>
+                <img src="assets/Aspen7.jpg" class="thumbnailImage">
+                <button
+                    onclick='
+                    //*** YOUR JAVASCRIPT CODE HERE ***
+
+
+                    '>View</button>
+            </div>
+            <div class='thumbnail'>
+                <img src="assets/Aspen8.jpg" class="thumbnailImage">
+                <button
+                    onclick='
+                    //*** YOUR JAVASCRIPT CODE HERE ***
+
+                    
+                    '>View</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<style>
+
+    #header {
+        display: flex;
+        justify-content: center;
+    }
+    #content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #mainDisplay{
+
+        margin-top: 3%;
+    }
+
+    #mainDisplay img {
+        width: 50vh;
+        border: 3px solid black;
+
+    }
+
+
+    #thumbnailsContainer {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        /* margin-top: 5%; */
+    }
+    .thumbnail {
+        position: relative; /* Set position context for absolute positioning of the button */
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: gray;
+        border: 3px solid black;
+    }
+    .thumbnail img {
+        margin: 0;
+        width: 10vh;
+        object-fit: cover; /* This will make sure to cover the area without stretching the image */
+    }
+    .thumbnail button {
+        position: absolute; /* Position the button over the image */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Center the button */
+    }
+</style>
+</html>
